@@ -1,8 +1,10 @@
 ACCESS POINT
 =======================
 
-sources documentaires pour plus de paramètres:
+**sources documentaires pour plus de paramètres:**
 https://docs.micropython.org/en/v1.19/library/network.WLAN.html
+
+La création d'un point d'accès s'effectue à l'aide de 4 lignes de code. Elles sont à placer dans le script boot.py de la carte D1 mini 
 
 importer la librairie network
 ::
@@ -24,7 +26,6 @@ définir les paramètres de l’interface ap
 
 
 
-le fichier boot.py permet de définir la carte D1 mini en mode access point(hotspot). Le nom du SSID et la clé de sécurité sont définis
 
 sources documentaires pour plus de paramètres:
 https://docs.micropython.org/en/v1.19/library/network.WLAN.html
