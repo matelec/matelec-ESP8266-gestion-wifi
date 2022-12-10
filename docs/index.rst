@@ -1,13 +1,20 @@
 ACCESS POINT
 =======================
 
+sources documentaires pour plus de paramètres:
+https://docs.micropython.org/en/v1.19/library/network.WLAN.html
+
 importer la librairie network
-        ::import network
+::
+        import network
 définir l’interface ap en mode AP
+::
         ap = network.WLAN(network.AP_IF)
 activé l’interface ap:
+::
         ap.active(True)
-définir les paramètres de l’interface ap:
+définir les paramètres de l’interface ap
+::
         ap.config(essid=‘xxxxx’, password=‘xxxxxx’)
 
 
