@@ -1,7 +1,7 @@
 # ESP8266-gestion-wifi
 ESP8266 gestion du réseau wifi
 
-#Access point
+# Access point
 
 le fichier boot.py permet de définir la carte D1 mini en mode access point(hotspot). Le nom du SSID et la clé de sécurité sont définis
 
