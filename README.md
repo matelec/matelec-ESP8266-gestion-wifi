@@ -1,12 +1,12 @@
 # ESP8266-gestion-wifi
 ESP8266 gestion du réseau wifi
 
-# Access point
+La librairie network est utilisée pour configurer la connexion wifi.
 
-le fichier boot.py permet de définir la carte D1 mini en mode access point(hotspot). Le nom du SSID et la clé de sécurité sont définis
+Il existe 2 interfaces Wifi: une interface en mode station et une interface en mode access point.
+  
+# Mode station:
+Nous connectons l’ESP8266 à un routeur sans fil. Dans cette configuration, nous pouvons accéder à la carte ESP via le réseau local et l’ESP a accès à internet.
 
-sources documentaires pour plus de paramètres:
-https://docs.micropython.org/en/v1.19/library/network.WLAN.html
-
-le fichier main.py permet de créer un serveur web par l'intermédiaire d'un socket.
-la boucle écoute et répond aux requêtes http. la page html est définie dans la fonction web_page
+# Mode Access Point:
+Quand la carte ESP est définie comme point d’accès (hotspot), vous pouvez vous y connecter à l’aide de n’importe quel appareil doté de capacités Wi-Fi sans avoir besoin de vous connecter à votre routeur. Vous créez votre propre réseau Wi-Fi et les appareils Wi-Fi à proximité (stations) peuvent s’y connecter (comme votre smartphone ou votre ordinateur).
